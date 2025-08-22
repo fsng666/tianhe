@@ -1,0 +1,138 @@
+/* -------------------------------------------------
+   function4-style.css
+   响应式布局 + 简洁视觉
+---------------------------------------------------- */
+
+/* 基础重置 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 页面背景 & 文字 */
+html, body {
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* -------------------------------------------------
+   导航栏
+---------------------------------------------------- */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0069d9;
+    color: #fff;
+    padding: 0.8rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.nav-home {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.nav-home:hover {
+    text-decoration: underline;
+}
+.nav-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* -------------------------------------------------
+   主体容器
+---------------------------------------------------- */
+.container {
+    max-width: 960px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* -------------------------------------------------
+   输入区域
+---------------------------------------------------- */
+.input-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+.input-section label {
+    flex: 1 0 100%;
+    font-weight: 500;
+}
+#video-id {
+    flex: 1 1 auto;
+    min-width: 120px;
+    padding: 0.45rem 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    /* 只接受数字 */
+    ime-mode: disabled;         /* 禁止中文输入法 */
+}
+#play-btn {
+    flex: 0 0 auto;
+    padding: 0.45rem 1rem;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#play-btn:hover {
+    background-color: #218838;
+}
+
+/* -------------------------------------------------
+   视频播放器
+---------------------------------------------------- */
+.video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#video-player {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: #000;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* 信息提示文字 */
+.message {
+    margin-top: 0.5rem;
+    color: #dc3545;      /* 错误提示红色 */
+    font-size: 0.95rem;
+}
+
+/* -------------------------------------------------
+   响应式细节
+---------------------------------------------------- */
+@media (min-width: 576px) {
+    .input-section label {
+        flex: 0 0 auto;
+        margin-right: 0.5rem;
+    }
+}
+@media (min-width: 768px) {
+    #play-btn {
+        padding: 0.5rem 1.2rem;
+        font-size: 1.05rem;
+    }
+}

@@ -1,0 +1,33 @@
+<!-- file: function2.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>2026 年高考倒计时</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入样式和脚本 -->
+    <link rel="stylesheet" href="function2-style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="nav-link" href="index.html">← 返回首页</a>
+    </nav>
+    <div class="container">
+        <!-- 顶部：距高考开考的天数 -->
+        <section class="overall">
+            <h1>距离 2026 年高考还有</h1>
+            <p id="overall-days">-- 天</p>
+        </section>
+
+        <!-- 科目倒计时（精确到秒） -->
+        <section class="subjects">
+            <h2>各科目开考倒计时</h2>
+                <ul id="subject-list">
+                    <!-- 由 JavaScript 动态生成 -->
+                </ul>
+        </section>
+    </div>
+
+    <script src="function2-timer.js"></script>
+</body>
+</html>
