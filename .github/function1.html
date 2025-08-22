@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>2048 小游戏 – 我的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入自定义 CSS -->
+    <link rel="stylesheet" href="function1-Style.css">
+</head>
+<body>
+    <!-- ① 导航栏 -->
+    <nav class="nav-bar">
+        <a href="index.html" class="nav-link">🏠 返回首页</a>
+        <h1>2048 小游戏</h1>
+    </nav>
+
+    <!-- ② 游戏说明 -->
+    <section class="game-info">
+        <h2>游戏规则</h2>
+        <p>在 4×4 的格子里，通过“上、下、左、右”四个方向滑动数字方块。</p>
+        <ul>
+            <li>相同数字的方块在一次滑动中会合并，合并后的数值为原来的两倍。</li>
+            <li>每一次滑动后，系统会在空格里随机生成一个 “2”(90%) 或 “4”(10%) 的方块。</li>
+            <li>当出现 2048 时，你赢了；当格子被填满且没有可合并的方块时，游戏结束。</li>
+        </ul>
+    </section>
+
+    <!-- ③ 游戏区域 -->
+    <section class="game-container">
+        <div id="game-board"></div>
+
+        <!-- 移动按钮（手机/平板） -->
+        <div class="mobile-controls">
+            <button class="control-btn" data-dir="up">↑</button>
+            <div class="middle-row">
+                <button class="control-btn" data-dir="left">←</button>
+                <button class="control-btn" data-dir="right">→</button>
+            </div>
+            <button class="control-btn" data-dir="down">↓</button>
+        </div>
+
+        <!-- 重新开始按钮 -->
+        <button id="new-game-btn" class="new-game">新一局</button>
+    </section>
+
+    <!-- ④ 脚本 -->
+    <script src="function1-Game.js"></script>
+</body>
+</html>

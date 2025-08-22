@@ -1,0 +1,139 @@
+<!-- 保存为 article1.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>文章《时光之钥》 - 个人博客</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* 与首页共享的 CSS（复制上面所有 <style> 内容） */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif;
+      line-height:1.6;background:#f9f9f9;color:#333}
+a{color:#1abc9c}
+header{background:#2c3e50;color:#fff;padding:.5rem 1rem}
+nav{max-width:1000px;margin:auto;display:flex;justify-content:space-between;align-items:center}
+nav .logo{font-size:1.2rem;font-weight:600}
+nav ul{list-style:none;display:flex;align-items:center}
+nav li{position:relative}
+nav a{display:block;padding:.5rem 1rem;color:#fff;transition:.3s}
+nav a:hover{background:rgba(255,255,255,.1)}
+.dropdown > a::after{content:"▾";margin-left:4px;font-size:.8rem}
+.sub-menu{display:none;position:absolute;top:100%;left:0;background:#34495e;min-width:140px;
+          border-radius:4px;z-index:1000;box-shadow:0 2px 4px rgba(0,0,0,.15)}
+.sub-menu a{padding:.5rem 1rem;color:#fff}
+.sub-menu a:hover{background:#1abc9c}
+.dropdown.open .sub-menu{display:block}
+@media (hover:hover) and (pointer:fine){.dropdown:hover .sub-menu{display:block}}
+.hamburger{display:none;flex-direction:column;cursor:pointer;margin-left:1rem}
+.hamburger span{width:25px;height:3px;background:#fff;margin:4px 0;transition:.3s}
+.main{max-width:1000px;margin:auto;padding:2rem 1rem}
+@media (max-width:768px){
+  nav ul{flex-direction:column;width:100%;background:#2c3e50;display:none}
+  nav ul.show{display:flex}
+  .hamburger{display:flex}
+  .sub-menu{position:static;background:#2c3e5}
+  .open .sub-menu{display:block}
+}
+</style>
+</head>
+
+<body>
+<header>
+  <nav>
+    <div class="logo">My Blog</div>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    <ul id="navList">
+      <li><a href="index.html">首页</a></li>
+      <li class="dropdown" id="dropdown-article"><a href="javascript:void(0);" id="articleBtn">文章列表</a>
+        <ul class="sub-menu"><li><a href="articles.html">所有文章</a></li></ul>
+      </li>
+      <li class="dropdown" id="dropdown-func"><a href="javascript:void(0);" id="funcBtn">功能</a>
+        <ul class="sub-menu"><li><a href="function.html">功能列表</a></li></ul>
+      </li>
+      <li><a href="about.html">关于</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="main">
+  <h1>文章 1 – 《时光之钥》</h1>
+  <p><small>2025‑08‑07  |  作者：AI</small></p>
+  <hr>
+  <p>  </p>
+
+  <h2>初遇时光之钥</h2>
+  <p>&emsp;&emsp;在遥远的北方，有一片神秘的土地，那里隐藏着一个被浓雾常年笼罩的小镇——雾影镇。这片浓雾仿佛是大自然的屏障，将小镇与外界隔绝开来，使得这里的居民过着一种与世无争的生活。每当晨曦初露或夕阳西下，雾气便会缓缓升腾，给小镇披上一层朦胧的纱衣，增添了几分神秘与宁静。</p>
+  <p>&emsp;&emsp;雾影镇的居民世代生活在这里，他们以农耕和手工艺为生，日出而作，日落而息，过着平静而简单的生活。小镇的街道两旁种满了各种花草树木，空气中弥漫着淡淡的花香和泥土的气息。居民们彼此熟悉，邻里之间和睦相处，整个小镇充满了温馨与和谐的氛围。</p>
+  <p>&emsp;&emsp;故事的主人公名叫林逸，一个普通的十五岁少年。他有着一头乌黑的短发和一双明亮的眼睛，眼神中透露出对世界的好奇与探索的渴望。林逸性格乐观且勇敢，总是面带微笑，给人一种温暖和力量的感觉。他在学校里成绩优异，尤其擅长历史和文学，这或许与他的家庭背景有关。</p>
+<p> &emsp;&emsp;林逸的父亲是一名历史学家，对古代文明有着深厚的研究。父亲常常带着林逸参观各种历史遗迹和博物馆，给他讲述那些古老的故事和传说。这些经历不仅丰富了林逸的知识，也激发了他对未知世界的无限遐想。林逸的母亲则是一位温柔的图书管理员，她热爱书籍，喜欢在图书馆里度过每一个安静的午后。母亲常常教导林逸要珍惜知识，用智慧去探索世界的奥秘。</p>
+<p> &emsp;&emsp;在这样的家庭环境中成长，林逸从小就养成了爱读书、爱思考的习惯。他喜欢在图书馆里遨游于书海，感受文字带来的奇妙旅程。无论是历史的长河，还是文学的海洋，都能让他沉浸其中，忘却尘世的烦恼。</p>
+<p>&emsp;&emsp;一天傍晚，夕阳的余晖洒在小镇的每一个角落，给雾影镇镀上了一层金色的光辉。林逸像往常一样来到小镇的图书馆，帮助母亲整理书籍。图书馆位于小镇的中心，是一座古朴典雅的建筑，外墙由青砖砌成，窗户上镶嵌着彩色的玻璃，透出柔和的光芒。</p>
+<p>&emsp;&emsp;图书馆内书香四溢，一排排书架整齐地排列着，上面摆满了各种各样的书籍。林逸熟练地穿梭在书架之间，将借阅过的书籍归位，偶尔还会帮母亲查找一些特定的资料。他喜欢这种安静而有序的环境，感觉自己仿佛置身于知识的殿堂，每本书都是一扇通往不同世界的门。</p>
+<p>&emsp;&emsp;就在林逸整理书籍的时候，一本古老的书突然吸引了他的注意。这本书静静地躺在书架的一角，与其他书籍相比显得格外陈旧。它的封面已经磨损，纸张泛黄，边缘微微卷曲，仿佛经历了无数年的风霜雨雪。书的封面上刻着一些奇异的符号，这些符号看起来既古老又神秘，仿佛在诉说着久远的秘密。</p>
+<p>&emsp;&emsp;林逸好奇地拿起这本书，轻轻翻开书页。书页上的文字模糊不清，但每一页都散发着一股奇异的气息，仿佛有一种无形的力量在召唤着他。他仔细观察，发现这些文字并非现代语言，而是某种古老的符文，记录着不为人知的历史和传说。</p>
+<p>&emsp;&emsp;林逸轻轻翻开书页，一股奇异的能量瞬间将他包围。这股能量如同电流一般在他的身体中流动，带来一种前所未有的感觉。他感到一阵眩晕，眼前的世界开始模糊，周围的景象变得扭曲起来。</p>
+<p>&emsp;&emsp;林逸努力保持清醒，试图理解发生了什么。他看到书页上的文字开始发光，那些奇异的符号仿佛活了过来，在空中舞动。接着，一道耀眼的光芒从书中射出，将他整个人包裹在其中。
+在这光芒的包围下，林逸感到自己仿佛被吸入了一个漩涡，周围的一切都在迅速旋转。他闭上眼睛，感受到时间与空间的界限在这一刻变得模糊。不知过了多久，他感到一阵轻微的震动，然后一切恢复了平静。</p>
+<p>&emsp;&emsp;当他再次睁开眼睛时，发现自己竟然站在了一个完全陌生的地方。这里是一个古老的城市，建筑风格与雾影镇截然不同。建筑物高大宏伟，墙壁上雕刻着精美的图案，街道两旁种满了奇异的植物，空气中弥漫着淡淡的魔法气息。</p>
+<p>&emsp;&emsp;林逸环顾四周，心中充满了惊讶与好奇。这里的每一处细节都与他所熟悉的小镇截然不同，仿佛来到了一个全新的世界。他看到一些穿着奇异服饰的人们在街上行走，他们的神情从容而自信，仿佛对这个城市的每一个角落都了如指掌。</p>
+<p>&emsp;&emsp;林逸低头看了看手中的那本书，发现它竟然变成了一把精致的钥匙——时光之钥。这把钥匙通体晶莹剔透，表面刻着复杂的纹路，散发出柔和的光芒。林逸轻轻转动钥匙，感受到一股温暖的能量在手中流淌，仿佛这把钥匙与他有着某种特殊的联系。</p>
+<p>&emsp;&emsp;林逸站在这个古老城市的街头，细细打量着周围的环境。这里的建筑风格独特，充满了古典与神秘的气息。建筑物大多采用石材建造，墙壁上雕刻着各种神话故事和象征符号，每一处细节都透露出悠久的历史和文化。</p>
+<p>&emsp;&emsp;街道两旁的建筑物高大而宏伟，屋顶覆盖着红色的瓦片，窗棂上装饰着精美的雕花。街道上铺着光滑的石板，两侧种满了奇异的植物，它们的叶子闪烁着微光，仿佛在夜晚也能照亮道路。</p>
+<p>&emsp;&emsp;空气中弥漫着淡淡的魔法气息，让林逸感到一种奇妙的舒适感。他深吸一口气，仿佛能闻到魔法的味道，清新而又神秘。偶尔，他会看到一些奇异的生物在空中飞翔，或是听到远处传来悠扬的魔法乐曲。</p>
+<p>&emsp;&emsp;林逸沿着街道慢慢前行，发现这里的人们都有着不同的面貌和服饰。有些人穿着华丽的长袍，头上戴着奇特的头饰；有些人则背着各式各样的背包，似乎在进行某种冒险或旅行。他们的神情各异，有的在交谈，有的在微笑，还有的在专注地做着手中的事情。</p>
+<p>&emsp;&emsp;林逸感到自己仿佛进入了一个奇幻的世界，这里的一切都充满了未知与惊喜。他心中涌起一股强烈的探索欲望，想要了解更多关于这个城市的故事和秘密。</p>
+<p>&emsp;&emsp;林逸惊讶地发现，自己手中的那本书竟然变成了一把精致的钥匙——时光之钥。这把钥匙通体晶莹剔透，表面刻着复杂的纹路，散发出柔和的光芒。林逸轻轻转动钥匙，感受到一股温暖的能量在手中流淌，仿佛这把钥匙与他有着某种特殊的联系。
+他仔细观察这把时光之钥，发现钥匙的顶端有一个小小的凹槽，凹槽内镶嵌着一颗闪耀的宝石。宝石散发着淡淡的光芒，仿佛在指引着林逸前进的方向。钥匙的柄部则刻有一些古老的符文，这些符文与书中看到的一模一样，仿佛在诉说着某个古老的故事。</p>
+<p>&emsp;&emsp;林逸心中充满了疑惑与好奇，他不知道这把时光之钥究竟有什么特殊的力量，也不知道自己为什么会来到这个陌生的城市。但他直觉告诉他，这一切都不是偶然，而是命运的安排。</p>
+<p>&emsp;&emsp;就在这时，一个声音在他耳边响起：“欢迎来到时光之城，年轻的旅者。”林逸转头一看，只见一个身穿长袍的老者正微笑着看着他。老者自称是时光守护者艾尔文，负责保护时光之城的秘密。</p>
+<p>&emsp;&emsp;艾尔文告诉林逸，时光之城是一个隐藏在时间裂缝中的神秘地方，只有拥有纯净心灵的人才能进入。而林逸手中的时光之钥，正是打开这个秘密世界的钥匙。</p>
+<p>&emsp;&emsp;“你为何会来到这里？”艾尔文问道。</p>
+<p>&emsp;&emsp;林逸讲述了自己在图书馆发现那本古书的经历。艾尔文听后点了点头，说道：“看来命运早已安排好了一切。你手中的时光之钥，不仅能够带你穿越时空，还肩负着重要的使命。”
+艾尔文的话让林逸心中燃起了希望与勇气，他知道，这将是一段充满挑战与冒险的旅程，但他无畏前行，因为他相信，只要心中有光，就没有什么是不可能的
+</p>
+
+
+  <p style="margin-top:2rem;"><a href="jy1/时光之钥.docx">← 下载全文</a></p>
+  <p style="margin-top:2rem;"><a href="articles.html">← 返回文章列表</a></p>
+</main>
+
+<script>
+/* 与首页相同的 JS（复制粘贴） */
+const hamburger = document.getElementById('hamburger');
+const navList   = document.getElementById('navList');
+const articleDd = document.getElementById('dropdown-article');
+const funcDd    = document.getElementById('dropdown-func');
+
+hamburger.addEventListener('click', () => {
+    navList.classList.toggle('show');
+    articleDd.classList.remove('open');
+    funcDd.classList.remove('open');
+});
+function addToggle(id, target){
+    document.getElementById(id).addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            target.classList.toggle('open');
+        }
+    });
+}
+addToggle('articleBtn', articleDd);
+addToggle('funcBtn',    funcDd);
+document.addEventListener('click', (e) => {
+    if (!articleDd.contains(e.target) && articleDd.classList.contains('open')) {
+        articleDd.classList.remove('open');
+    }
+    if (!funcDd.contains(e.target) && funcDd.classList.contains('open')) {
+        funcDd.classList.remove('open');
+    }
+});
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        articleDd.classList.remove('open');
+        funcDd.classList.remove('open');
+    }
+});
+</script>
+</body>
+</html>

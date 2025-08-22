@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>视频播放站 - Function4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入外部 CSS -->
+    <link rel="stylesheet" href="function4-style.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <a class="nav-home" href="index.html">← 返回首页</a>
+        <h1 class="nav-title">视频播放站</h1>
+    </header>
+
+    <!-- 主体内容 -->
+    <main class="container">
+        <!-- 输入视频编号的表单 -->
+        <section class="input-section">
+            <label for="video-id">请输入 **8 位** 视频编号：</label>
+            <input type="text"
+                   id="video-id"
+                   placeholder="如 00001234、20230815"
+                   autocomplete="off"
+                   maxlength="8"
+                   pattern="\d{8}"
+                   title="请输入 8 位数字">
+            <button id="play-btn">播放视频</button>
+        </section>
+
+        <!-- 视频播放器 -->
+        <section class="video-section">
+            <video id="video-player"
+                   controls
+                   poster="sp/function4/placeholder.jpg">
+                您的浏览器不支持 HTML5 视频播放。
+            </video>
+            <p id="msg" class="message"></p>
+        </section>
+    </main>
+
+    <!-- 引入外部 JS（放在页面底部，提升首次渲染速度） -->
+    <script src="function4-script.js"></script>
+</body>
+</html>

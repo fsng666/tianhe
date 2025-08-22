@@ -1,0 +1,77 @@
+/* file: function2-style.css */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* 统一容器 */
+.container{
+    max-width:900px;
+    margin:0 auto;
+    padding:20px;
+}
+
+/* 整体计时 */
+.overall{
+    text-align:center;
+    margin-bottom:30px;
+}
+.overall h1{
+    font-size:2rem;
+    color:#333;
+}
+#overall-days{
+    font-size:3.5rem;
+    color:#e53935;
+    margin-top:10px;
+}
+
+/* 科目列表 */
+.subjects h2{
+    font-size:1.6rem;
+    margin-bottom:15px;
+    text-align:center;
+    color:#333;
+}
+#subject-list{
+    list-style:none;
+    display:grid;
+    gap:15px;
+}
+
+/* 每一项 */
+#subject-list li{
+    background:#f8f9fa;
+    border-radius:8px;
+    padding:15px;
+    text-align:center;
+    font-size:1.2rem;
+    color:#555;
+    transition:background .3s;
+}
+#subject-list li:hover{
+    background:#e0f7fa;
+}
+
+/* 响应式布局 */
+@media (min-width:600px){
+    #subject-list{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width:900px){
+    #subject-list{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media (max-width:599px){
+    .overall h1,
+    #overall-days{
+        font-size:1.8rem;
+    }
+    #subject-list li{
+        font-size:1rem;
+    }
+}
